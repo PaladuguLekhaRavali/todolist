@@ -1,0 +1,46 @@
+*{
+
+padding:0;
+margin:0;
+box-sizing: border-box;
+
+}
+body{
+height :100vh;/*100vh means 100% of screen if screen height is 100px then it uses 100px*/
+background: linear-gradient(#dfdd59dc 50%,#e80de8 50%);
+}
+.app{
+    font-family: "poppins",sans-serif;
+    width:min(95vw,500px);
+    /* doubt */
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top:1.875em;
+    /* doubt top left top * em rem*/
+
+
+
+}
+.container{
+    padding:2em 2.5em;
+    background-color: gainsboro ;
+    box-shadow:0 1em 2em rgba(0,0,0,0.3) ;
+    border-radius: 0.8em;
+}
+#wrapper{
+    position: relative;
+    display: grid;
+    grid-template-columns: 8fr 4fr;
+    gap: 1em;
+}
+#wrapper input {
+    width: 100%;   /* no nedd*/
+    background-color: transparent;
+    color:rgb(0, 0, 0);
+    font-size: 0.9em;
+    border: none;
+    padding:
+
+}
