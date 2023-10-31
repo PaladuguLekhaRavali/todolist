@@ -18,17 +18,21 @@ if(!taskName)
     setTimeout(
         ()=>{
             error.style.display="block";
-        },200
-    );
+        },200);
     return;
 }
 const task = `<div class = "task">
 <input type ="checkbox" class="task-check">
 <span class = "taskname">${taskName}</span>
 <button class ="edit">
-
+<i class="fa-solid fa-pen-to-square"></i>
 </button>
-<button 
+<button  class="delete">
+
+<i class="fa-solid fa-trash"></i>
+</button>
 </div>`;
+tasksContainer.insertAdjacentHTML("beforeend",task);
 
 };
+addBtn.addEventListener("click",addTask);
